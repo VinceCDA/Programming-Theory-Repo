@@ -34,8 +34,8 @@ public class Animal : MonoBehaviour
         }
         else
         {
+            collider.gameObject.SetActive(false);
             Destroy(gameObject);
-            Destroy(collider.gameObject);
         }
     }
 }
