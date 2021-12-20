@@ -7,11 +7,19 @@ public class PlayerController : MonoBehaviour
     private float horizontalInput;
     private float speed = 20.0f;
     private float xRange = 20;
-    public GameObject projectilePrefab;
+    [SerializeField]
+    private GameObject projectilePrefab;
 
 
     // Update is called once per frame
     void Update()
+    {
+        
+
+
+
+    }
+    protected void ControlPlayer()
     {
         // Check for left and right bounds
         if (transform.position.x < -xRange)
@@ -42,8 +50,5 @@ public class PlayerController : MonoBehaviour
                 pooledProjectile.transform.position = transform.position; // position it at player
             }
         }
-
-
-
     }
 }

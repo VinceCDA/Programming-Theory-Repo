@@ -93,10 +93,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1679089136862527684}
   - component: {fileID: 1679089136855643038}
-  - component: {fileID: 1679089136363892766}
   - component: {fileID: 550866036770157042}
   - component: {fileID: 6451103562469021978}
-  - component: {fileID: 5889280613493991447}
+  - component: {fileID: 3785530531202915372}
+  - component: {fileID: 3377815598497526152}
   m_Layer: 0
   m_Name: Animal_Moose_02
   m_TagString: Untagged
@@ -147,19 +147,6 @@ Animator:
   m_HasTransformHierarchy: 0
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1679089136363892766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1679089136862780176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 212f0d0f62a980b4baa2fe8a153443d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 7
 --- !u!114 &550866036770157042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,7 +172,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.12679699, y: 0.48989853, z: 0.4399182}
   m_Center: {x: -0.008227392, y: 0.22608636, z: 0.061038192}
---- !u!114 &5889280613493991447
+--- !u!114 &3785530531202915372
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -194,9 +181,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 1679089136862780176}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e055fb0b3460bf64dac6cecb028b3f9b, type: 3}
+  m_Script: {fileID: 11500000, guid: e0fd7a0739b1f26468c926f732549f71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _health: 0
+  _attackPoint: 3
+--- !u!54 &3377815598497526152
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679089136862780176}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1679089136862790080
 GameObject:
   m_ObjectHideFlags: 0
